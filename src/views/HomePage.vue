@@ -3,12 +3,18 @@
   <p class="main-page__subtitle">
     {{$t('global.main_subtitle')}}
   </p>
-  <TheButton class="main-page__cta" variant="default">
+  <TheButton
+    :href="FORM_URL"
+    target="_blank"
+    class="main-page__cta"
+    variant="default"
+  >
     {{$t('global.header.cta')}}
   </TheButton>
 </template>
 <script setup lang="ts">
 import TheButton from "@/components/CtaButton/TheButton.vue";
+import {FORM_URL} from "@/common/constants.ts";
 </script>
 
 <style lang="scss" scoped>

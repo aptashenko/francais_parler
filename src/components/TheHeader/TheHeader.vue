@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import TheButton from "@/components/CtaButton/TheButton.vue";
 import {useBurger} from "@/composables/useBurger.ts";
+import {FORM_URL} from "@/common/constants.ts";
 const { openMobileMenu, toggleMenu } = useBurger();
 </script>
 
@@ -29,7 +30,11 @@ const { openMobileMenu, toggleMenu } = useBurger();
           {{ $t('global.header.menu.4') }}
         </router-link>
       </nav>
-      <TheButton variant="inverse">
+      <TheButton
+        :href="FORM_URL"
+        target="_blank"
+        variant="inverse"
+      >
         {{$t('global.header.cta')}}
       </TheButton>
     </div>
@@ -51,7 +56,12 @@ const { openMobileMenu, toggleMenu } = useBurger();
           {{ $t('global.header.menu.4') }}
         </router-link>
       </nav>
-      <TheButton variant="inverse" class="header__cta">
+      <TheButton
+        :href="FORM_URL"
+        target="_blank"
+        variant="inverse"
+        class="header__cta"
+      >
         {{$t('global.header.cta')}}
       </TheButton>
     </div>

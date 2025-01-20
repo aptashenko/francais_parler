@@ -27,6 +27,7 @@ const buttonComponent = computed(() => {
 <template>
   <component
     :is="buttonComponent"
+    v-bind="{to, href}"
     class="cta-button"
     :class="[props.variant]"
   >
