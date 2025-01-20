@@ -1,0 +1,25 @@
+@use "@/assets/styles/colors.scss" as colors;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+html {
+  background: #fff;
+}
+
+body {
+  height: 100%;
+  font-family: "PT Sans", serif;
+}
+
+#app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
