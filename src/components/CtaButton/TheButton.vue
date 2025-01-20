@@ -13,9 +13,9 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const buttonComponent = computed(() => {
-  if (props.to) {
+  if (props?.to) {
     return RouterLink
-  } else if (props.href) {
+  } else if (props?.href) {
     return 'a'
   } else {
     return 'button'
@@ -44,15 +44,28 @@ const buttonComponent = computed(() => {
   border-radius: 28px;
   width: fit-content;
   font-weight: 700;
+  cursor: pointer;
+
+  transition: all .25s ease;
 
   &.default {
     background: colors.$primary-200;
     color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: colors.$primary-200;
+    }
   }
 
   &.inverse {
     background: #fff;
     color: colors.$primary-200;
+
+    &:hover {
+      background: colors.$primary-200;
+      color: #fff;
+    }
   }
 }
 </style>

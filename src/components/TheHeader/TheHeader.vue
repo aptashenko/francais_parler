@@ -29,7 +29,7 @@ const { openMobileMenu, toggleMenu } = useBurger();
           {{ $t('global.header.menu.4') }}
         </router-link>
       </nav>
-      <TheButton to="/" variant="inverse">
+      <TheButton variant="inverse">
         {{$t('global.header.cta')}}
       </TheButton>
     </div>
@@ -51,7 +51,7 @@ const { openMobileMenu, toggleMenu } = useBurger();
           {{ $t('global.header.menu.4') }}
         </router-link>
       </nav>
-      <TheButton to="/" variant="inverse" class="header__cta">
+      <TheButton variant="inverse" class="header__cta">
         {{$t('global.header.cta')}}
       </TheButton>
     </div>

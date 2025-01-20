@@ -11,7 +11,7 @@
       <p v-html="$t('global.sessions.travel.description')"/>
     </div>
   </div>
-  <TheButton to="/" class="main-page__cta" variant="default">
+  <TheButton class="main-page__cta" variant="default">
     {{$t('global.header.cta')}}
   </TheButton>
 </template>
