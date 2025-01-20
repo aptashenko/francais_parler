@@ -28,7 +28,7 @@ const buttonComponent = computed(() => {
   <component
     :is="buttonComponent"
     class="cta-button"
-    :class="[variant]"
+    :class="[props.variant]"
   >
     <slot />
   </component>

@@ -12,7 +12,7 @@
   <p class="main-page__text">
     {{$t('global.about.options.4')}}
   </p>
-  <TheButton to="/" class="main-page__cta">
+  <TheButton to="/" class="main-page__cta" variant="default">
     {{$t('global.header.cta')}}
   </TheButton>
 </template>
