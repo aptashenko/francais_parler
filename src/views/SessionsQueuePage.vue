@@ -8,6 +8,7 @@
       <p v-html="$t('global.sessions.travel.date', {date: '15/02/2025'})"/>
       <p v-html="$t('global.sessions.travel.cost', {cost: '100 €'})"/>
       <p v-html="$t('global.sessions.travel.duration')"/>
+      <p v-html="$t('global.sessions.travel.type')"/>
       <p v-html="$t('global.sessions.travel.description')"/>
     </div>
   </div>
@@ -56,7 +57,7 @@ import {FORM_URL} from "@/common/constants.ts";
     gap: 24px;
 
     & img {
-      width: 45%;
+      width: 50%;
       margin: 0 auto;
       display: block;
       flex-shrink: 0;
