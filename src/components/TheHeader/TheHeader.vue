@@ -2,6 +2,7 @@
 import TheButton from "@/components/CtaButton/TheButton.vue";
 import {useBurger} from "@/composables/useBurger.ts";
 import {FORM_URL} from "@/common/constants.ts";
+import TheIcon from "@/components/TheIcon/TheIcon.vue";
 const { openMobileMenu, toggleMenu } = useBurger();
 </script>
 
@@ -29,6 +30,10 @@ const { openMobileMenu, toggleMenu } = useBurger();
         <router-link to="/why">
           {{ $t('global.header.menu.4') }}
         </router-link>
+        <a href="https://t.me/aptashenko" target="_blank" class="header__telegram-nav">
+          <TheIcon name="telegram" />
+          {{ $t('global.header.menu.5') }}
+        </a>
       </nav>
       <TheButton
         :href="FORM_URL"
@@ -55,6 +60,10 @@ const { openMobileMenu, toggleMenu } = useBurger();
         <router-link to="/why">
           {{ $t('global.header.menu.4') }}
         </router-link>
+        <a href="https://t.me/aptashenko" target="_blank" class="header__telegram-nav">
+          <TheIcon name="telegram" />
+          {{ $t('global.header.menu.5') }}
+        </a>
       </nav>
       <TheButton
         :href="FORM_URL"
@@ -155,6 +164,18 @@ const { openMobileMenu, toggleMenu } = useBurger();
 
     @media (max-width: 478px) {
       margin: 0 auto;
+    }
+  }
+
+  &__telegram-nav {
+    display:flex;
+    text-wrap: nowrap;
+    align-items: center;
+    gap: 4px;
+
+    & svg {
+      flex-shrink: 0;
+      width: 25px;
     }
   }
 }
